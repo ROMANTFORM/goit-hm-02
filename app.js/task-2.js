@@ -1,13 +1,10 @@
 const calculateEngravingPrice = function(message, pricePerWord) {
     
-    let result = pricePerWord;
-    if (message === 'Proin sociis natoque et magnis parturient montes mus') {
-        result = pricePerWord * 8;
-    } else if (message === 'Donec orci lectus aliquam est magnis') {
-        result = pricePerWord * 6;
-    }
-        
-    console.log(result);
+  const messageInArr = message.split(' ');
+  console.log(messageInArr);
+  let result = pricePerWord * messageInArr.length;
+  return result;
+   
   };
   
 
